@@ -1,25 +1,19 @@
 <template>
-    <div class="bg-gray-100 min-h-screen">
-      <!-- Header -->
-      <DashboardHeader/>
+  <div class="bg-gray-100 min-h-screen">
+    <DashboardHeader/>
 
-      <!-- Hero Section (dynamique en fonction de isInRepair) -->
-      <HeroSection :isInRepair= "isInRepair"/>
+    <HeroSection :isInRepair= "isInRepair"/>
 
-      <UserCarSection modelName="Mercedes-AMG GT" estimatedTime="5" carImage="Mercedes-AMG GT.png"/>
+    <UserCarSection modelName="Mercedes-AMG GT" estimatedTime="5" carImage="Mercedes-AMG GT.png"/>
 
-      <div class="w-4/5 mx-auto border-t border-gray-300 my-6"></div>
+    <div class="w-4/5 mx-auto border-t border-gray-300 my-6"></div>
 
     <RepairHistory :repairs="repairs" />
-
-      <!-- Footer -->
-      <MainFooter />
-    </div>
+  </div>
 </template>
 
 <script>
 import DashboardHeader from '@/components/DashboardHeader.vue'
-import MainFooter from '@/components/MainFooter.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import RepairHistory from '@/components/RepairHistory.vue'
 import UserCarSection from '@/components/UserCarSection.vue'
@@ -27,7 +21,6 @@ import UserCarSection from '@/components/UserCarSection.vue'
 export default {
   components: {
     DashboardHeader,
-    MainFooter,
     HeroSection,
     RepairHistory,
     UserCarSection

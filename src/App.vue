@@ -1,7 +1,7 @@
 <template>
-  <MainHeader v-if="$route.name !== 'Dashboard'"/>
+  <MainHeader v-if="$route.name !== 'Dashboard' && $route.name !== 'Mechanic_ToDoList' && $route.name !== 'Client_ToDoList'"/>
   <router-view/>
-  <MainFooter v-if="$route.name !== 'Dashboard'"/>
+  <MainFooter/>
 </template>
 
 <script>

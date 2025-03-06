@@ -10,9 +10,8 @@
 
         <!-- LIENS + BOUTON LOGIN -->
         <div class="flex items-center gap-6 ml-auto">
-          <router-link to="/" class="text-black hover:text-gray-600 font-medium">Create</router-link>
-          <router-link to="/" class="text-black hover:text-gray-600 font-medium">My Vehicle</router-link>
-          <router-link to="/" class="text-black hover:text-gray-600 font-medium">Contact</router-link>
+          <router-link to="/login" class="text-black hover:text-gray-600 font-medium">Create</router-link>
+          <router-link to="/login" class="text-black hover:text-gray-600 font-medium">My Vehicle</router-link>
 
           <!-- Bouton Login bien aligné -->
           <router-link to="/login" class="bg-black text-white font-medium px-4 py-2 rounded-md hover:bg-gray-800 flex items-center">Login</router-link>

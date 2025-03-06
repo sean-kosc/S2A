@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import UserDashboard from '@/views/UserDashboard.vue'
 import Login from '@/views/LoginView.vue'
+import MechanicToDoList from '@/views/MechanicToDoList.vue'
+import ClientToDoList from '@/views/ClientToDoList.vue'
 
 const routes = [
   {
@@ -26,6 +28,16 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: Login
+  },
+  {
+    path: '/mechanic_to_do_list',
+    name: 'Mechanic_ToDoList',
+    component: MechanicToDoList
+  },
+  {
+    path: '/client_to_do_list',
+    name: 'Client_ToDoList',
+    component: ClientToDoList
   }
 ]
 
