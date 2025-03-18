@@ -1,5 +1,5 @@
 <template>
-  <MainHeader v-if="$route.name !== 'Dashboard' && $route.name !== 'Mechanic_ToDoList' && $route.name !== 'Client_ToDoList'"/>
+  <MainHeader v-if="showHeader"/>
   <router-view/>
   <MainFooter/>
 </template>
@@ -9,15 +9,11 @@ import MainFooter from '@/components/MainFooter.vue'
 import MainHeader from '@/components/MainHeader.vue'
 
 export default {
-  components: {
-    MainFooter,
-    MainHeader
-  },
-  data () {
-    return {}
-  },
-  methods: {
-
+  components: { MainFooter, MainHeader },
+  computed: {
+    showHeader () {
+      return this.$route.name !== 'Dashboard' && this.$route.name !== 'Mechanic_ToDoList' && this.$route.name !== 'Client_ToDoList'
+    }
   }
 }
 </script>
